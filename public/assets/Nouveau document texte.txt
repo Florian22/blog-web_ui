@@ -1,0 +1,112 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+//Redux
+import {connect} from "react-redux";
+import * as actionCreators from "../../actions/index";
+
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+
+
+const mapStatetoProps = (state) => {
+    return state;
+  }
+
+const LoggedOutView = props => {
+    return (
+      <Nav pullRight>
+      <NavItem eventKey={1} componentClass={Link} to="/" href="/">
+          Feed
+      </NavItem>
+      <NavItem eventKey={2} componentClass={Link} to="/signin" href="/signin">
+          Login
+      </NavItem>
+      }
+    </Nav>
+    );
+};
+
+const LoggedInView = props => {
+    return (
+      <Nav pullRight > 
+      <NavItem eventKey={3} componentClass={Link} to="/new/article" href="/new/article">
+          New
+      </NavItem>
+      <NavItem eventKey={4} componentClass={Link} to="/logout" href="/logout">
+          Logout
+      </NavItem>
+    </Nav>
+    );
+};
+
+var style = {
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-25%)",
+  textDecoration : "none",
+};
+
+var brandStyle = {
+  paddingTop: "50px!important",
+}
+
+class NavBar extends React.Component {
+  render() {
+    /*if(this.props.currentuser){
+      return(
+        <Navbar inverse collapseOnSelect style={{background:"rgba(0, 0, 0, 0.2)", border: "0", marginBottom: "0", zIndex: "1030"}}>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <Link to="/" style = {{color: "white"}}>Florian Bonniec</Link>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav  style= {{float: "right"}}>
+              <LoggedInView/>
+            </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+      );
+    }else{*/
+      //fixed-top
+     /* return(
+        <Navbar inverse collapseOnSelect  style={{background:"rgba(0, 0, 0, 0.2)", border: "0", marginBottom: "0", zIndex: "1030"}}> 
+    <Navbar.Header>
+      <Navbar.Brand>
+        <Link to="/"  style = {{color: "white"}}>Florian Bonniec</Link>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav  style= {{float: "right"}}>
+        <LoggedOutView/>
+        </Nav>
+      
+        </Navbar.Collapse>
+      </Navbar>
+      );*/
+      return(
+          <NavBar default collapseOnSelect>
+              <Navbar.Header>
+                  <Navbar.Brand>
+                      <Link to="/">Florian Bonniec</Link>
+                  </Navbar.Brand>
+                  <Navbar.Toggle />
+              </Navbar.Header>
+              <Navbar.Collapse>
+              {/*this.props.currentuser ? (
+                <LoggedInView/>
+              ) : (
+                <LoggedOutView/>
+              )*/}
+              <LoggedOutView/>
+              </Navbar.Collapse>
+          </NavBar>
+      );
+    }
+  }
+
+
+//export default NavBar;
+export default connect(mapStatetoProps,actionCreators)(NavBar);

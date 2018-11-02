@@ -1,0 +1,13 @@
+
+.customNavBar{
+    background:rgb(0, 0, 0, 0.4)!important;
+    border: none;
+}
+.navbar-brand, ul.navbar-nav>li>a{
+    color: white!important;
+}
+
+.navbar-nav{
+    margin: 0px 0px;
+}
+
