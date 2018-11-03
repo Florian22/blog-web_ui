@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_ROOT = 'http://158.69.208.67:3999/api/v1';
+const API_ROOT = 'http://apiblog.florianbonniec.com/api/v1';
 
 //endpoint /post
 export function loadArticles(){
