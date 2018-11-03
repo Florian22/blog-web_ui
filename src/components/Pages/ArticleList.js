@@ -20,7 +20,6 @@ class ArticleList extends React.Component {
   
   componentWillMount() {
     this.props.loadArticles();
-    console.log("Mount");
   }
 
   componentWillUnmount() {
@@ -28,7 +27,6 @@ class ArticleList extends React.Component {
   }
 
   componentDidUpdate () {
-    console.log("refresh");
   }
 
   render() {
