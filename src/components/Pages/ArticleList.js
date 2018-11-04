@@ -36,7 +36,7 @@ class ArticleList extends React.Component {
         {/*Image header*/}
         <Row>
           <Col xsHidden smHidden>
-            <Image src="assets/header-crop.jpg" className="header-image"/>
+            <Image src="assets/header-crop-mtl.jpg" className="header-image"/>
           </Col>
         </Row>
         {/*Page*/}
