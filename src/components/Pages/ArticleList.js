@@ -33,7 +33,7 @@ class ArticleList extends React.Component {
     if(this.props.articles){
     return (
       <div>
-        {/*Image header*/}
+        {/*Image header with Bootstrap*/}
         <Row>
           <Col xsHidden smHidden>
             <Image src="assets/header-crop.jpg" className="header-image"/>
