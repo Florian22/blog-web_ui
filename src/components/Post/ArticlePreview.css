@@ -1,21 +1,21 @@
-.neutral_href{
+a .neutral{
    text-decoration: none;
    color: black!important;
 }
 
 /*Remove underline when hover*/
 
-.neutral_href :link {
+a .neutral :link {
     text-decoration: none;
     color: black!important;
 }
 
-.neutral_href :visited {
+a .neutral :visited {
     text-decoration: none;
     color: black!important;
 }
 
-.neutral_href :hover {
+a .neutral :hover {
     text-decoration: none;
     color: black!important;
 }
