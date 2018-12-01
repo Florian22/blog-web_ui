@@ -7,14 +7,17 @@
 
 .neutral_href:link {
     text-decoration: none;
+    color: black!important;
 }
 
 .neutral_href:visited {
     text-decoration: none;
+    color: black!important;
 }
 
 .neutral_href:hover {
     text-decoration: none;
+    color: black!important;
 }
 
 .title{
