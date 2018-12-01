@@ -8,7 +8,8 @@ import "./ArticleList.css"
 //CustomPages
 import * as actionCreators from "../../actions/index";
 import ArticlePreview from "../Post/ArticlePreview";
-
+//CST
+import Constants from "../../config/constants";
 const mapStatetoProps = (state) => {
   return state;
 }
@@ -20,6 +21,7 @@ class ArticleList extends React.Component {
   
   componentWillMount() {
     this.props.loadArticles();
+    console.log(Constants.base_url);
   }
 
   componentWillUnmount() {
@@ -36,7 +38,7 @@ class ArticleList extends React.Component {
         {/*Image header with Bootstrap*/}
         <Row>
           <Col xsHidden smHidden>
-            <Image src="assets/header-crop.jpg" className="header-image"/>
+            <Image src={`${Constants.base_url}/assets/header-crop.jpg`} className="header-image"/>
           </Col>
         </Row>
         {/*Page*/}
