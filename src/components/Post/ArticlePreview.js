@@ -17,7 +17,7 @@ class ArticlePreview extends React.Component {
   render() {
     return (
         <div className = "preview_card">
-        <Link to={`/article/${this.props.post._id}`} className = "neutral"> 
+        <Link to={`/article/${this.props.post._id}`} style={{ textDecoration: 'none', color: 'black' }}> 
             <PostOverview url = {this.props.post.imgURL}/>
             <PostMetaData post = {this.props.post}/>
             <h2 className = "title">{this.props.post.title}</h2>

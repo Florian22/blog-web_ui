@@ -1,25 +1,3 @@
-a .neutral{
-   text-decoration: none;
-   color: black!important;
-}
-
-/*Remove underline when hover*/
-
-a .neutral :link {
-    text-decoration: none;
-    color: black!important;
-}
-
-a .neutral :visited {
-    text-decoration: none;
-    color: black!important;
-}
-
-a .neutral :hover {
-    text-decoration: none;
-    color: black!important;
-}
-
 .title{
     margin-top: 0.1em;
     margin-left: 0.2em;
