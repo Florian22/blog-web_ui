@@ -5,17 +5,17 @@
 
 /*Remove underline when hover*/
 
-.neutral_href:link {
+a:link {
     text-decoration: none;
     color: black!important;
 }
 
-.neutral_href:visited {
+a:visited {
     text-decoration: none;
     color: black!important;
 }
 
-.neutral_href:hover {
+a:hover {
     text-decoration: none;
     color: black!important;
 }
