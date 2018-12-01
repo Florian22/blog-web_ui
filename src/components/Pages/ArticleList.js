@@ -21,7 +21,7 @@ class ArticleList extends React.Component {
   
   componentWillMount() {
     this.props.loadArticles();
-    console.log(Constants.base_url);
+    //console.log(Constants.base_url);
   }
 
   componentWillUnmount() {

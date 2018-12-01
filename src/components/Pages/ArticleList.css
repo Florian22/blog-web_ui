@@ -12,6 +12,8 @@ div.row {
 /*Custom Css*/
 .header-image {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
     max-height: 30em;
     margin-top: -8em;
     margin-bottom: 2em;
