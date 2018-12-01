@@ -1,0 +1,13 @@
+
+.article_picture{
+  width: 100%;
+  max-width: inherit;
+  max-height: inherit;
+  height: 250px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-bottom: 2em;
+  object-fit: cover;
+  object-position: center;
+
+}
