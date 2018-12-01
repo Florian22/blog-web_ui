@@ -14,7 +14,7 @@ export default class ArticleMetaData extends React.Component {
     return (
         <div>
           {/* A JSX comment   <h2>{this.props.post.title}</h2> */}
-            <Image className = "profil_picture" src={`url(${this.props.post.user.picture})`} ></Image>
+            <Image className = "profil_picture" src={this.props.post.user.picture} ></Image>
             <div className = "author_name"> {article_date} by {this.props.post.user.username}</div>
         </div>
     );
