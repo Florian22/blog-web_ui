@@ -41,7 +41,8 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 let store = createStore(persistedReducer, applyMiddleware(thunk))
 let persistor = persistStore(store)
 //let store = createStore(reducers, applyMiddleware(thunk));
-  
+ReactGA.initialize('UA-130249137-1');
+ReactGA.pageview('/homepage');
 const app = document.getElementById('app');
 ReactDOM.render(
     <Provider store = {store}>
@@ -61,10 +62,7 @@ ReactDOM.render(
         </PersistGate>
     </Provider>, app);
 
-function initializeReactGA() {
-    ReactGA.initialize('UA-130249137-1');
-    ReactGA.pageview('/homepage');
-}
+
 
 //<ArticleList articles = {postEx}/>
 //<Route path = "home" component = {Home}></Route>

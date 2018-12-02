@@ -4,6 +4,9 @@ import {connect} from "react-redux";
 import { Row , Grid, Col, Button} from 'react-bootstrap';
 import ReactDisqusComments from "react-disqus-comments";
 
+//Google Analytics
+import ReactGA from 'react-ga';
+
 import PostOverview from "./ArticleOverview";
 import PostBody from "./ArticleBody";
 import PostMetaData from "./ArticleMetaData";
@@ -20,6 +23,8 @@ class ArticleView extends React.Component {
  
     componentWillMount() {
         this.props.loadArticle(this.props.match.params.id);
+        ReactGA.initialize('UA-130249137-1');
+        ReactGA.pageview(window.location.pathname + window.location.search);
         }
 
     componentWillUnmount() {
