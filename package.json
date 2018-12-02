@@ -15,6 +15,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.6.0",
     "react-draft-wysiwyg": "^1.12.13",
+    "react-ga": "^2.5.6",
     "react-infinite-scroll-component": "^4.2.0",
     "react-redux": "^5.1.0",
     "react-router": "^4.3.1",

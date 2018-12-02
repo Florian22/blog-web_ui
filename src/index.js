@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+//Google Analytics
+import ReactGA from 'react-ga';
+
 //BrowserRouter import {Router, Route, IndexRoute, hashHistory} from "react-router";
 import { BrowserRouter, Route } from 'react-router-dom';
 import { createStore, applyMiddleware} from 'redux';
@@ -57,6 +60,11 @@ ReactDOM.render(
         </BrowserRouter>
         </PersistGate>
     </Provider>, app);
+
+function initializeReactGA() {
+    ReactGA.initialize('UA-130249137-1');
+    ReactGA.pageview('/homepage');
+}
 
 //<ArticleList articles = {postEx}/>
 //<Route path = "home" component = {Home}></Route>
